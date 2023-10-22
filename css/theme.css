@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #FFD800;
+}
+
+
+/* general */
+
+html {
+    font-size: 1.2vw;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Aileron Regular", sans-serif;
+}
+
+
+/* scrollbar */
+
+html {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* cursor */
+
+html {
+    cursor: none;
+}
+
+#circularcursor {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 100px 20px var(--primary-color);
+}
+
+
+/* Buttons */
+
+.btn-primary {
+    --glow-color: var(--primary-color);
+    --glow-spread-color: var(--primary-color);
+    --enhanced-glow-color: var(--primary-color);
+    --btn-color: #ffd90032;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 1.0vw;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+}
+
+.btn-primary::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #ffd900c6;
+    box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+}
+
+.btn-primary:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+/* text */
+
+.big-grey-text {
+    color: #b3b3b3;
+    font-size: 25vw;
+    font-family: fantasy;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
+}
+
+
+/* classes */
+
+.display-flex {
+    display: flex;
+}
+
+.text-hover {
+    margin: -27px;
+}
+
+.text-hover:hover {
+    color: var(--primary-color);
+}
