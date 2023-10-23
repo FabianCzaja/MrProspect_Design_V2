@@ -82,3 +82,89 @@
     height: 20vw;
     margin-top: 8vw;
 }
+
+
+/* zitats */
+
+.zitat-container div {
+    margin: 5vw;
+}
+
+.zitat-text {
+    font-size: 3vw;
+}
+
+.zitat-img-container {
+    border: 2px #fff solid;
+    min-width: 25vw;
+    min-height: 20vw;
+}
+
+#horizontal-text-scroll-primary {
+    position: relative;
+    width: fit-content;
+    margin: -50px 0 -50px -400%;
+    font-size: 15vw;
+}
+
+#horizontal-text-scroll-secondary {
+    position: relative;
+    width: fit-content;
+    margin: -50px 0 -50px 240%;
+    font-size: 15vw;
+}
+
+#horizontal-text-scroll-third {
+    position: relative;
+    width: fit-content;
+    margin: -50px 0 0 -200%;
+    font-size: 15vw;
+}
+
+/* pricing */
+
+#prices {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 auto;
+}
+
+#prices > div {
+    margin: 30px;
+    padding: 30px;
+    width: 20vw;
+    border: 2px #fff solid;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#prices ul {
+    text-align: left;
+}
+
+.buy-button {
+    border: 2px var(--primary-color) solid;
+    padding: 15px;
+    font-size: 1.5vw;
+    border-radius: 20px;
+}
+
+/* social media */
+
+#social-media {
+    text-align: center;
+    display: flex;
+    width: 50%;
+    margin: 50px auto 50px auto;
+}
+
+.social-media-container {
+    margin: 0 auto;
+
+}
+
+.social-media-container img {
+    width: 4vw;
+}
