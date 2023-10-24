@@ -30,17 +30,20 @@
 #header {
     height: 100%;
     display: flex;
-    justify-content: space-around;
-    margin: 0 5% 0 5%;
+    margin: -10% 0 0 0;
 }
 
 #header h1 {
-    font-size: 1.5vw;
+    font-size: 3.8vw;
 }
 
 #header h2 {
-    font-size: 4.5vw;
-    margin: -25px;
+    font-size: 1.5vw;
+    color: #767676;
+}
+
+#header-text {
+    width: 50%;
 }
 
 #logo {
@@ -53,19 +56,36 @@
     width: 20vw;
 }
 
-#header div {
+#header>div {
     margin: 0 auto;
     padding: 5%;
 }
 
-#header-button {
-    top: 150px;
+#header-btn-container {
+    position: relative;
+    top: 3vw;
+    display: flex;
 }
 
-#header div:last-of-type {
-    margin-left: 10vw;
+#header-btn-container div:last-of-type {
+    margin: 0 0 0 5vw;
 }
 
+#header-right > div:first-of-type {
+    position: relative;
+    bottom: 10vw;
+    right: 13vw;
+}
+
+#header-right img {
+    width: 60vw;
+}
+
+#counter-card-container {
+    position: relative;
+    bottom: 19vw;
+    right: 8vw;
+}
 
 /* intro */
 
@@ -129,19 +149,25 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 auto;
+    position: relative;
 }
 
-#prices > div {
+#prices>div {
     margin: 30px;
     padding: 30px;
     width: 20vw;
     border: 2px #fff solid;
     border-radius: 20px;
     text-align: center;
+
 }
 
 #prices ul {
     text-align: left;
+}
+
+.paket-description {
+    height: 25vw;
 }
 
 .buy-button {
@@ -149,6 +175,11 @@
     padding: 15px;
     font-size: 1.5vw;
     border-radius: 20px;
+}
+
+.buy-button:hover {
+    background-color: var(--primary-color);
+    color: #000;
 }
 
 /* social media */
@@ -167,4 +198,10 @@
 
 .social-media-container img {
     width: 4vw;
+}
+
+/* how it works */
+
+#how-it-works {
+    text-align: center;
 }

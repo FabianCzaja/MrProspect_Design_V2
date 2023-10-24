@@ -22,6 +22,18 @@ hr {
     background: linear-gradient(to right, orange, var(--primary-color));
 }
 
+/* footer */
+
+footer {
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+footer .display-flex div {
+    margin: 0 auto;
+    text-align: left;
+}
+
 /* scrollbar */
 
 html {
@@ -40,7 +52,7 @@ html {
 }
 
 #circularcursor {
-    background-color: transparent;
+    background-color: #000;
     border: 1px solid var(--primary-color);
     height: 20px;
     width: 20px;
@@ -48,7 +60,7 @@ html {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
     box-shadow: 0 0 100px 30px var(--primary-color);
 }
 
@@ -61,7 +73,7 @@ html {
     --enhanced-glow-color: var(--primary-color);
     --btn-color: #ffd90032;
     border: .25em solid var(--glow-color);
-    padding: 2em 4em;
+    padding: 20px;
     color: var(--glow-color);
     font-size: 1vw;
     font-weight: bold;
@@ -71,7 +83,8 @@ html {
     box-shadow: 0 0 0.5em .25em var(--glow-color), 0 0 9em 1em var(--glow-spread-color), inset 0 0 1.25em .25em var(--glow-color);
     text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
-    width: 20vw;
+    min-width: 12vw;
+    max-width: 12vw;
 }
 
 .btn-primary::after {
@@ -98,6 +111,18 @@ html {
     box-shadow: 0 0 0.6em .25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
 }
 
+.btn-secondary {
+    background-color: #3535357d;
+    color: #b4b4b4;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 12vw;
+    max-width: 12vw;
+}
+
+.btn-secondary:hover {
+    background-color: #5352527d;
+}
 
 /* text */
 
@@ -122,4 +147,59 @@ html {
 
 .text-hover:hover {
     color: var(--primary-color);
+}
+
+.counter-card {
+    background-color: #494949a0;
+    border-radius: 20px;
+    min-width: 15vw;
+    max-width: 15vw;
+    height: 5vw;
+    z-index: 30;
+    padding: 30px;
+}
+
+.counter-card span {
+    color:#b3b3b3
+}
+
+.counter-card:first-of-type {
+    position: relative;
+    top: 2vw;
+    z-index: 50;
+}
+
+.counter-card:last-of-type {
+    position: relative;
+    right: 6vw;
+    bottom: 1vw;
+}
+
+.colored-counter-card {
+    background: linear-gradient(var(--primary-color), orange);
+    color:#000;
+    z-index: 40;
+    position: relative;
+    top: 7vw;
+    right: 2vw;
+}
+
+.colored-counter-card span {
+    color: #201f1f;
+}
+/* spotlight */
+
+.spotlight {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 50vw;
+}
+
+#spotlight-left {
+    left: 0;
+}
+
+#spotlight-right {
+    right: 0;
 }
