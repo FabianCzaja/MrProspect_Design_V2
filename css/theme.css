@@ -22,6 +22,7 @@ hr {
     background: linear-gradient(to right, orange, var(--primary-color));
 }
 
+
 /* footer */
 
 footer {
@@ -33,6 +34,7 @@ footer .display-flex div {
     margin: 0 auto;
     text-align: left;
 }
+
 
 /* scrollbar */
 
@@ -124,6 +126,7 @@ html {
     background-color: #5352527d;
 }
 
+
 /* text */
 
 .big-grey-text {
@@ -160,7 +163,7 @@ html {
 }
 
 .counter-card span {
-    color:#b3b3b3
+    color: #b3b3b3
 }
 
 .counter-card:first-of-type {
@@ -177,7 +180,7 @@ html {
 
 .colored-counter-card {
     background: linear-gradient(var(--primary-color), orange);
-    color:#000;
+    color: #000;
     z-index: 40;
     position: relative;
     top: 7vw;
@@ -187,6 +190,8 @@ html {
 .colored-counter-card span {
     color: #201f1f;
 }
+
+
 /* spotlight */
 
 .spotlight {
