@@ -17,6 +17,35 @@
 </head>
 
 <body>
+    <dialog id="dialog">
+        <div class="header">
+            <h1>Kostenloses Erstgespräch</h1>
+        </div>
+        <hr>
+
+        <form>
+            <div class="body">
+                <label>Vorname</label>
+                <input type="text">
+                <br>
+                <label>Nachname</label>
+                <input type="text">
+                <br>
+                <label>E-Mail Adresse</label>
+                <input type="email">
+                <br>
+                <label>Telefonnummer</label>
+                <input type="tel">
+            </div>
+            <hr>
+            <div class="btn-box">
+                <button type="submit">Eintragen</button>
+        </form>
+        <button type="close" onclick="closeDialog()">Abbrechen</button>
+        </div>
+
+    </dialog>
+
     <div id="circularcursor"></div>
 
     <a id="logo">
@@ -35,13 +64,13 @@
                 <h2>BINDE MIT UNS KÜNSTLICHE INTELLIGENZ IN DEIN BUSINESS EIN UND SCHAFFE DIE KONKURRENZ VOM MARKT.
             </h1>
             <div id="header-btn-container">
-                <div class="btn-primary">
-                    Los gehts!
-                </div>
+                <button class="btn-primary" onclick="openDialog()">
+                    Jetzt eintragen!
+                </button>
 
-                <div class="btn-secondary">
+                <button class="btn-secondary" id="how-it-works-button">
                     Wie funktioniert das?
-                </div>
+                </button>
             </div>
         </div>
         <div id="header-right">
@@ -86,18 +115,20 @@
 
         <div class="zitat-container display-flex">
             <div class="zitat-text">
-                <p>"Dank künstlicher Intelligenz erreicht unsere Software bessere Zahlen als ein Mensch. Die KI merkt sich, wer geantwortet hat und targetiert Konten, die eine gewisse Ähnlichkeit haben. Somit strebt sie eine 100%-Antwortrate an!" ~ Fabian
+                <p>"Dank künstlicher Intelligenz erreicht unsere Software bessere Zahlen als ein Mensch. Die KI merkt
+                    sich, wer geantwortet hat und targetiert Konten, die eine gewisse Ähnlichkeit haben. Somit strebt
+                    sie eine 100%-Antwortrate an!" ~ Fabian
                     Czaja
                 </p>
             </div>
             <div class="zitat-img-container">
                 <img>
-                <label>Fabian Czaja - Head of IT</label>
+                <label>Fabian Czaja - Head of IT, Founder</label>
             </div>
         </div>
 
         <div>
-            <p id="horizontal-text-scroll-primary" class="big-grey-text">
+            <p id="horizontal-text-scroll-primary" class="big-yellow-text">
                 <nobr>
                     KÜNSTLICHE INTELLIGENZ.
                 </nobr>
@@ -110,14 +141,16 @@
                 <label>Mark Moloney - Head of Sales</label>
             </div>
             <div class="zitat-text">
-                <p>"Ich habe schon Alles versucht, um diesen Prozess zu automatisieren. Von Mitarbeiter einstellen, bis hin zur Auslands-Verlagerungen. Doch ich habe noch keine Lösung gefunden, die so zeit-, energie- und kostensparend ist wie MrProspect!"
+                <p>"Ich habe schon Alles versucht, um diesen Prozess zu automatisieren. Vom Mitarbeitern einstellen, bis
+                    hin zur Auslands-Verlagerungen. Doch ich habe noch keine Lösung gefunden, die so zeit-, energie- und
+                    kostensparend ist wie MrProspect!"
                     ~ Mark Moloney
                 </p>
             </div>
         </div>
 
         <div>
-            <p id="horizontal-text-scroll-secondary" class="big-grey-text">
+            <p id="horizontal-text-scroll-secondary" class="big-yellow-text">
                 <nobr>
                     KUNDENGEWINNUNG.
                 </nobr>
@@ -126,7 +159,9 @@
 
         <div class="zitat-container display-flex">
             <div class="zitat-text">
-                <p>"Unsere Kundenzufriedenheit ist meine höchste Priorität!" ~ Marcel Dreher
+                <p>"Ohne Service geht nichts! Wir sind hier, um sicherzustellen, dass dein Weg zur automatisierten
+                    Kundengewinnung reibungslos abläuft. Wir eliminieren alle Hürden und beantworten dir jede Fragen." ~
+                    Marcel Dreher
                 </p>
             </div>
             <div class="zitat-img-container">
@@ -136,7 +171,7 @@
         </div>
 
         <div>
-            <p id="horizontal-text-scroll-third" class="big-grey-text">
+            <p id="horizontal-text-scroll-third" class="big-yellow-text">
                 <nobr>
                     ZUFRIEDENHEIT.
                 </nobr>
@@ -284,26 +319,70 @@
 
     <div id="how-it-works">
         <h1>Wie funktioniert Mr. Prospect?</h1>
-        <div>
-            <div>
+        <br>
+        <div id="how-it-works-steps-container">
+            <div class="how-it-works-step">
                 <h2>Einmalige Einrichtung</h2>
+                <p>Du richtest dir deinen Zugang ein, verknüpfst deine(n) Instagram Account(s). Du erschaffst deine
+                    erste
+                    "KI", stellst sie ein und dann betätigst du nur noch den Starthebel! Schon geht's los...</p>
             </div>
 
-            <div>
+            <div id="first-setup">
+                <p>Du bist dir nicht sicher, ob das so einfach geht?</p>
+                <p>Wir zeigen dir mit dieser Demo, wie leicht es ist, deine KI aufzusetzen:</p>
+
+                <div id="demo">
+
+                </div>
+            </div>
+
+            <h2>Prozesszyklus:</h2>
+
+            <br>
+
+            <div class="how-it-works-step">
                 <h2>Datenbeschaffung</h2>
+                <p>Deine KI schreibt die ersten Prospects an und simuliert ein <strong>Nutzerverhalten</strong>. Deine
+                    Leadmaschine merkt
+                    sich, wer bereits kontaktiert wurde und wer geantwortet hat.</p>
             </div>
 
-            <div>
+            <div class="how-it-works-step">
                 <h2>Datenanalyse</h2>
+                <p>Die gesammelten Daten werden auf unseren Hochleistungs-Servern analysiert und ausgewertet. Die
+                    Accounts, die geantwortet haben, werden als "positiver Wert" abgespeichert.</p>
             </div>
 
-            <div>
+            <div class="how-it-works-step">
                 <h2>Resultat</h2>
+                <p>Die KI lernt mit der Zeit, wer wahrscheinlich antworten wird und schreibt vermehrt Accounts an, die
+                    Profilen ähneln, welche dir bereits geantwortet haben. <strong>Somit können wir die maximale
+                        Antwortquote
+                        gewährleisten.</strong></p>
             </div>
         </div>
     </div>
 
+    <hr>
+
+    <div id="testimonials">
+        <h2>Was sagen unsere Kunden?</h2>
+
+        <div id="testimonials-videos-container">
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="pitch">
+
+    </div>
+
     <footer>
+        </div>
+
         <div class="display-flex">
             <div>
                 <h6>Über Mr Prospect</h6>

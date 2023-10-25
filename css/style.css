@@ -67,17 +67,20 @@
     display: flex;
 }
 
-#header-btn-container div:last-of-type {
+#header-btn-container button:last-of-type {
     margin: 0 0 0 5vw;
 }
 
-#header-right > div:first-of-type {
+#header-right > button:first-of-type {
     position: relative;
     bottom: 10vw;
     right: 13vw;
 }
 
 #header-right img {
+    position: relative;
+    right: 15vw;
+    bottom: 10vw;
     width: 60vw;
 }
 
@@ -111,7 +114,7 @@
 }
 
 .zitat-text {
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .zitat-img-container {
@@ -204,4 +207,27 @@
 
 #how-it-works {
     text-align: center;
+}
+
+.how-it-works-step {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.how-it-works-step p {
+    font-size: 1.8vw;
+}
+
+#demo {
+    height: 40vw;
+}
+
+/* testimonials */
+
+#testimonials {
+    text-align: center;
+}
+
+#testimonials-videos-container {
+    height: 30vw;
 }

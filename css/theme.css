@@ -137,6 +137,14 @@ html {
     -webkit-text-stroke: 3px;
 }
 
+.big-yellow-text {
+    color: var(--primary-color);
+    font-size: 25vw;
+    font-family: fantasy;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
+}
+
 
 /* classes */
 
@@ -175,7 +183,7 @@ html {
 .counter-card:last-of-type {
     position: relative;
     right: 6vw;
-    bottom: 1vw;
+    bottom: 0.5vw;
 }
 
 .colored-counter-card {
@@ -198,7 +206,7 @@ html {
     display: none;
     position: fixed;
     top: 0;
-    width: 50vw;
+    width: 30vw;
 }
 
 #spotlight-left {
@@ -207,4 +215,46 @@ html {
 
 #spotlight-right {
     right: 0;
+}
+
+/* dialog */
+
+dialog[open] {
+    background-color: #1b1b1b;
+    color: #fff;
+    margin-top: 10%;
+    width: 40vw;
+    border: 2px #2e2e2e solid;
+    border-radius: 20px;
+    z-index: 900;
+    position: fixed;
+
+}
+
+dialog .header {
+    color: #b3b3b3;
+}
+
+dialog .body {
+    padding: 2vw;
+}
+
+dialog .btn-box {
+   
+}
+
+dialog button {
+    padding: 1vw;
+    margin: 0.5vw;
+    font-size: 1.8vw;
+    background-color: transparent;
+    color: #b3b3b3;
+    border: 2px var(--primary-color) solid;
+    border-radius: 10px;
+    float: right;    
+}
+
+dialog button:hover { 
+    background-color: var(--primary-color);
+    color: #000;
 }
