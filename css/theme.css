@@ -217,6 +217,7 @@ html {
     right: 0;
 }
 
+
 /* dialog */
 
 dialog[open] {
@@ -228,7 +229,6 @@ dialog[open] {
     border-radius: 20px;
     z-index: 900;
     position: fixed;
-
 }
 
 dialog .header {
@@ -239,9 +239,7 @@ dialog .body {
     padding: 2vw;
 }
 
-dialog .btn-box {
-   
-}
+dialog .btn-box {}
 
 dialog button {
     padding: 1vw;
@@ -251,10 +249,10 @@ dialog button {
     color: #b3b3b3;
     border: 2px var(--primary-color) solid;
     border-radius: 10px;
-    float: right;    
+    float: right;
 }
 
-dialog button:hover { 
+dialog button:hover {
     background-color: var(--primary-color);
     color: #000;
 }

@@ -10,22 +10,22 @@ window.onload = (event) => {
     }
 };
 
-document.body.onmousemove = function (e) {
+document.body.onmousemove = function(e) {
     document.getElementById("circularcursor").style.setProperty(
         'left', (
             e.clientX + window.scrollX
         ) +
-    'px'
+        'px'
     );
     document.getElementById("circularcursor").style.setProperty(
         'top', (
             e.clientY + window.scrollY
         ) +
-    'px'
+        'px'
     );
 }
 
-document.onscroll = function (e) {
+document.onscroll = function(e) {
     document.getElementById("horizontal-text-scroll-primary").style.setProperty(
         'left',
         window.innerWidth / window.scrollY * 400 +
@@ -53,38 +53,3 @@ document.onscroll = function (e) {
         document.getElementById("spotlight-right").style.display = "none";
     }*/
 }
-
-function ElementInViewport(el) {
-
-    // Special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-    }
-
-    var rect = el.getBoundingClientRect();
-
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-    );
-}
-
-function openDialog() {
-    document.getElementById("dialog").show();
-    document.body.style.setProperty("overflow", "hidden")
-    document.body.style.setProperty("height", "90%")
-}
-
-function closeDialog() {
-    document.getElementById("dialog").close();
-    document.body.style.removeProperty("overflow")
-    document.body.style.removeProperty("height")
-}
-
-
-document.getElementById("how-it-works-button").addEventListener("click",(e)=>{
-    e.preventDefault();
-    document.getElementById("how-it-works").scrollIntoView({behavior: 'smooth'});
-});
